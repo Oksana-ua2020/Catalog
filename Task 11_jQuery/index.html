@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 11_jQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+      <form name="form">
+        <div class="calculator">
+          <input class="inputDisplay" value="0">
+          <table>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><input type="button" value="C" onclick="clearInput()"></td>
+              <td><input type="button" value="/" onclick="insertCharacter('/')"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="9" onclick="insertCharacter('9')"></td>
+              <td><input type="button" value="8" onclick="insertCharacter('8')"></td>
+              <td><input type="button" value="7" onclick="insertCharacter('7')"></td>
+              <td><input type="button" value="*" onclick="insertCharacter('*')"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="6" onclick="insertCharacter('6')"></td>
+              <td><input type="button" value="5" onclick="insertCharacter('5')"></td>
+              <td><input type="button" value="4" onclick="insertCharacter('4')"></td>
+              <td><input type="button" value="+" onclick="insertCharacter('+')"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="3" onclick="insertCharacter('3')"></td>
+              <td><input type="button" value="2" onclick="insertCharacter('2')"></td>
+              <td><input type="button" value="1" onclick="insertCharacter('1')"></td>
+              <td><input type="button" value="-" onclick="insertCharacter('-')"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="button" value="0" onclick="insertCharacter('0')"></td>
+              <td></td>
+              <td><input type="button" value="=" onclick="result()"></td>
+            </tr>
+          </table>
+    
+        </div>
+        <div id = 'logsArea' class="logsBlock">
+        </div>
+      </form>
+    
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/index.js"></script>
+    </body>
+    
+    </html>

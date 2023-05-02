@@ -1,0 +1,247 @@
+@mixin link {
+    font-family: $fontSecondary;
+    color: map-get($anyColors, h1-textColor);
+
+    &:hover {
+        color: map-get($anyColors, markColor);
+    }
+}
+
+@mixin button {
+    width: 120px;
+    height: 35px;
+    background-color: map-get($anyColors, buttonColor);
+    border: none;
+    border-radius: 5px;
+    color: map-get($anyColors, h1-textColor);
+    font-size: 15px;
+    font-weight: 600;
+
+    &:hover {
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: $fontMain;
+    background-color: map-get($anyColors, backColor);
+}
+
+.header {
+    display: block;
+    height: 600px;
+    padding-left: 150px;
+    background: $headerBack;
+    background-size: cover;
+    border-radius: 0 0 50% 0 / 40%;
+}
+
+.header_heading {
+    margin-bottom: 25px;
+    display: block;
+    font-family: $fontMain;
+    color: map-get($anyColors, main-page-color);
+    font-size: 65px;
+    font-weight: 800;
+    width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.header_heading::after {
+    position: absolute;
+    content: "";
+    top: 117px;
+    left: 0px;
+    width: 273px;
+    height: 70px;
+    text-align: center;
+    background-color: map-get($anyColors, markColor);
+    z-index: -1;
+}
+
+.header_text {
+    text-align: justify;
+    color: map-get($anyColors, main-page-color);
+    font-size: 14px;
+    width: 550px;
+    margin-bottom: 20px
+}
+
+.header_button {
+    @include button;
+    margin-right: 100px;
+}
+
+.login {
+    @include link;
+}
+
+.landing-logo {
+    display: flex;
+    width: 150px;
+
+    img {
+        margin-top: 16px;
+        display: inline-block;
+        height: 50px;
+    }
+
+    p {
+        margin-left: 16px;
+        display: flex;
+        color: map-get($anyColors, main-page-color);
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+
+        span {
+            font-size: 8px;
+        }
+    }
+}
+
+.section {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.section_text {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+.section_text::after {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 491px;
+    width: 158px;
+    height: 40px;
+    text-align: center;
+    background-color: map-get($anyColors, markColor);
+    z-index: -1;
+}
+
+.section_card {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    background-color: map-get($anyColors, section-color);
+    border-radius: 10px;
+}
+
+.section_card_img {
+    border-radius: 10px;
+    width: 435px;
+}
+
+.section_card_right_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    justify-content: center;
+    text-align: justify;
+
+    .section_card_heading {
+        color: map-get($anyColors, h1-textColor);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .section_card_text {
+        width: 450px;
+    }
+
+    .section_link {
+        @include link;
+    }
+}
+
+.section_card_text {
+    width: 470px;
+    text-align: justify;
+    color: map-get($anyColors, h1-textColor);
+}
+
+.section_banner {
+    background: $liner-gradient;
+    position: relative;
+    z-index: 1;
+    left: 0px;
+    top: 60px;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+
+    button {
+        @include button;
+        vertical-align: middle;
+        margin-top: 40px;
+        margin-right: 50px;
+    }
+}
+
+.section_banner::after {
+    position: absolute;
+    content: "";
+    top: 36px;
+    left: 158px;
+    width: 56px;
+    height: 26px;
+    text-align: center;
+    background-color: map-get($anyColors, markColor);
+    z-index: -1;
+}
+
+.footer {
+    background-color: map-get($anyColors, galleryColor);
+    color: map-get($anyColors, h2-textColor);
+    padding-top: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+
+    .footer_text {
+        width: 335px;
+    }
+}
+
+.section_banner_text_wrap {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    p {
+        margin: 10px 0;
+    }
+
+    .section_banner_heading {
+        font-family: $fontMain;
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .section_banner_text {
+        color: map-get($anyColors, h1-textColor);
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

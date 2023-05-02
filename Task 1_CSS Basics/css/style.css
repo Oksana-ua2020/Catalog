@@ -1,0 +1,163 @@
+.tm-content-box,
+.tm-sidebar{
+    box-shadow: 0 0 10px 1px rgb(116, 116, 116);
+}
+
+.tm-banner{
+    padding: 0px;
+    border: 30px solid Gainsboro
+}
+
+.tm-main-nav a:hover{
+    background-color: Gainsboro;
+    cursor: pointer;
+}
+
+.tm-content-box p::first-letter,
+.tm-footer p::first-letter{
+    font-size: 30px;
+    color: #87CEFA;
+}
+
+#about li:hover{
+    background-color: #87CEFA;
+    cursor: pointer;
+}
+#about h2:hover{
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 300px 0 0;
+    border-color: #87CEFA transparent transparent transparent;
+}
+
+.carousel-content h2{
+    color: Gainsboro;
+    letter-spacing: 5px;
+}
+
+h2 + p{
+    font-style: italic;
+}
+
+.tm-team-description-container{
+    max-width: 50%;
+}
+.flex-item img{
+    max-width: 100%;
+}
+
+.flex-2-col{
+    display: flex;
+    align-items: center;
+}
+
+p{
+    text-indent: 20px;
+    line-height: 2em;
+}
+
+.padding-medium > ol > li > a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    border: 1px solid white;
+}
+.padding-medium > ol > li > a:focus{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.padding-medium li a:hover{
+    cursor: pointer;
+    color: #87CEFA;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.gallery-container p{
+    color: gray;
+    text-indent:unset;
+    line-height: 1.5em;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.gallery-container p::first-letter{
+    font-size: 30px;
+    color: gray;
+}
+.gallery-container li:nth-child(2n){
+    background-color: rgb(223, 219, 219);
+}
+.gallery-container h2{
+    margin-left: 10px;
+}
+.contact-form button{
+    float: right;
+    border: 1px solid #87CEFA;
+    color: #87CEFA;
+    background-color: white;
+    border-radius: 0mm;
+    width: 140px;
+    height: 50px;
+}
+.contact-form button:hover{
+    border: 1px solid #5ec1ff;
+    background-color: #87CEFA;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.text::after{
+    content: 'NEW';
+    color: red;
+    font-size: 10px;
+    vertical-align: super;
+    position: absolute;
+}
+.mandatory-field:after{
+    content:"*"; 
+    color: red;
+}
+
+
+@media print{
+    .tm-sidebar,
+    .heading,
+    .blocks,
+    #ideas,
+    #about,
+    #contact {
+        display: none;
+    }
+    .tm-content-box > img{
+        display: none;
+    }
+    .tm-banner{
+        border: none;
+    }
+    .flex-item img{
+        width: 70%;
+    }
+    .flex-2-col{
+        padding-top: 50px;
+    }
+    section + .tm-content-box{
+        display: none;
+    }
+    .padding-medium h2{
+        color: blue;
+        letter-spacing: 0.5px;
+    }
+    section::before{
+        display: none;
+    }
+
+}

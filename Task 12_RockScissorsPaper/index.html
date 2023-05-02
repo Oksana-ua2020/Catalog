@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+  <title>Task 12_RockScissorsPaper</title>
+  <script src="https://kit.fontawesome.com/24e3797245.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Let’s play</h1>
+      <div class="rules">
+        <div id="illustration"></div>
+        <p>A famous kid game! Everybody knows the <i>rules:</i></p>
+        <p><b>Scissors beats a paper // Paper beats rock // Rock beats scissors</b></p>
+      </div>
+      <button class="restart-btn" id="restart">RESET</button>
+      <div class="score" id="score">
+        <p>Player: 0</p>
+        <p>Computer: 0</p>
+      </div>
+    </header>
+    <h2>Make Your Choice</h2>
+    <div class="choices">
+      <i id="rock" class="choice fas fa-hand-rock "></i>
+      <i id="paper" class="choice fas fa-hand-paper "></i>
+      <i id="scissors" class="choice fas fa-hand-scissors "></i>
+    </div>
+  </div>
+  <div class="modal">
+    <div id="result" class="modal-content"></div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

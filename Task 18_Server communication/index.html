@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 18_Server communication</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <h1>Page <span id="page-number"></span></h1>
+            <div class="pagination-wrap">
+                <button class="prev">Previous page</button>
+                    <button class="next">Next page</button>
+            </div>
+            <button id="modal__open">Add posts</button>
+        </div>
+    </header>
+    <main>
+        <div id="modalForm" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Post</h2>
+                </div>
+                <div class="modal-body">
+                    <p><b>Post title:</b><br>
+                        <input type="text" placeholder="post title" class="new-post__title">
+                    <p><b>Post body:</b><br>
+                        <textarea rows="10" cols="45" placeholder="post body" class="new-post__body"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button class="new-post__add">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="posts">
+            <div class="wrapper">
+                <div class="posts__list"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

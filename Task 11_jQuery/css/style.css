@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.log {
+    display: flex;
+    justify-content: space-around;
+}
+form {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+table {
+    background: rgb(224, 224, 224);
+}
+
+table input[type=button] {
+	width: 50px;
+	height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+td{
+    background: gray;
+    width: 50px;
+}
+
+input.close:hover {
+    color: red;
+}
+
+input.marker:hover, input.marker:focus {
+    background-color: red;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    padding: 25px;
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 10px -10px 10px rgb(199, 199, 199);
+}
+
+.close {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    font-size: xx-large;
+}
+
+.equation {
+    width: 60%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.inputDisplay {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: end;
+}
+
+.logsBlock {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.marker {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background-color: white;
+}
+

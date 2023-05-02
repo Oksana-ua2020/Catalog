@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "tsc index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

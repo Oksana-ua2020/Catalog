@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.tweet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.w-500 {
+    width: 500px;
+    margin: 5px;
+}
+
+.w-170 {
+    width: 170px;
+}
+
+.w-button {
+    width: 70px;
+    height: 25px;
+}
+
+.body div {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    width: 100%;
+    background-color: rgb(255, 125, 125);
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.tweet-text {
+    width: 100%;
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: left;
+}

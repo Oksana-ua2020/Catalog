@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #f2c744;
+  --light: #f4f6f9;
+  --dark: #000;
+  --primary-font: 'Shadows Into Light', cursive;
+  --secondary-font: 'Dancing Script', cursive;
+}
+
+body {
+  background-color: var(--light);
+  width: 60%;
+  margin: auto;
+}
+
+header, footer{
+  height: 140px;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  height: 100px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.blok_shadow {
+  box-shadow: 0 0 5px rgb(182, 182, 182);
+}
+
+.bio {
+  width: 30%;
+  height: 40%;
+  padding: 20px;
+  margin-left: 5px;
+}
+
+.bio_avatar {
+  height: 70px;
+  width: 70px;
+}
+
+.bio_avatar_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 70px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.div_content {
+  width: 100%;
+  height: 80%;
+}
+
+.footer_logo {
+  width: 50px;
+  height: 30px;
+}
+
+.footer_text_primary {
+  font-family: var(--primary-font);
+  color: var(--dark);
+  font-size: small;
+}
+
+.footer_text_secondary {
+  font-family: var(--secondary-font);
+  color: var(--dark);
+  font-size: 15px;
+}
+
+.footer_p {
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+.header_text_primary {
+  font-family: var(--primary-font);
+  color: var(--dark);
+}
+
+.header_text_secondary {
+  font-family: var(--secondary-font);
+  color: var(--dark);
+  font-size: 25px;
+}
+
+.j_center {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 75px;
+  height: 50px;
+}
+
+.portfolio {
+  width: 60%;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: min-content max-content auto;
+  grid-auto-columns: minmax(200px, 1fr);
+  grid-auto-flow: dense;
+  gap: 5px;
+}
+
+.portfolio_img {
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+object-fit: cover;
+overflow: hidden;
+}
+
+.portfolio_img_little {
+grid-row: span 2;  
+}
+
+.portfolio_img_average {
+  grid-row: span 3;  
+}
+
+.portfolio_img_medium {
+  grid-row: span 4;  
+}
+
+.portfolio_img_large {
+  grid-row: span 5;  
+}   
+
+.text_weight {
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  .div_content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
